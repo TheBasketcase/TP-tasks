@@ -94,7 +94,7 @@ public class Fourth {
                 remw = arr[1] - arr[0];
                 pay = remw * arr[2];
             }
-        System.out.println('$'+pay);
+        System.out.println("$"+pay);
     }
     public static void BMI(String weight, String height){
         String westr = weight.substring(0, weight.indexOf(' '));
@@ -108,11 +108,11 @@ public class Fourth {
         double mass = we/Math.pow(he,2);
         Double massfin = BigDecimal.valueOf(mass).setScale(1, RoundingMode.HALF_UP).doubleValue();
         if (mass < 18.5)
-            System.out.println("Данный вес = "+massfin+" является недостаточным");
+            System.out.println("Г„Г Г­Г­Г»Г© ГўГҐГ± = "+massfin+" ГїГўГ«ГїГҐГІГ±Гї Г­ГҐГ¤Г®Г±ГІГ ГІГ®Г·Г­Г»Г¬");
         else if (mass >= 25)
-            System.out.println("Данный вес = "+massfin+" является избыточным");
+            System.out.println("Г„Г Г­Г­Г»Г© ГўГҐГ± = "+massfin+" ГїГўГ«ГїГҐГІГ±Гї ГЁГ§ГЎГ»ГІГ®Г·Г­Г»Г¬");
         else
-            System.out.println("Данный вес = "+massfin+" является нормальным");
+            System.out.println("Г„Г Г­Г­Г»Г© ГўГҐГ± = "+massfin+" ГїГўГ«ГїГҐГІГ±Гї Г­Г®Г°Г¬Г Г«ГјГ­Г»Г¬");
     }
     public static void burger(int a){
         int i = 1;
@@ -166,9 +166,9 @@ public class Fourth {
             if ("AEIOUY".contains(last2.substring(i, i+1)))
                 vow2 += last2.charAt(i);
         if (vow1.equals(vow2))
-                    System.out.println("Строки рифмуются");
+                    System.out.println("Г‘ГІГ°Г®ГЄГЁ Г°ГЁГґГ¬ГіГѕГІГ±Гї");
                 else
-                    System.out.println("Строки не рифмуются");
+                    System.out.println("Г‘ГІГ°Г®ГЄГЁ Г­ГҐ Г°ГЁГґГ¬ГіГѕГІГ±Гї");
 
     }
     public static void numb32 (String str1, String str2){
